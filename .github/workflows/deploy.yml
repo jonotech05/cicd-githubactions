@@ -69,4 +69,4 @@ jobs:
             # Verify app is running
             pm2 status
             sleep 5
-            curl -f http://localhost:3000/health || echo "Health check warning"
+            curl -f ${{ secrets.EC2_HOST }}:3000/health || echo "Health check warning"
