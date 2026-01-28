@@ -45,7 +45,7 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             cd /var/www/cicd-lab || sudo mkdir -p /var/www/cicd-lab
-            sudo chown ec2-user:ec2-user /var/www/cicd-lab
+            sudo chown ubuntu:ubuntu /var/www/cicd-lab
             cd /var/www/cicd-lab
 
             # Pull latest code
