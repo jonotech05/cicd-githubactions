@@ -23,7 +23,7 @@ app.get('/health', (req, res) => {
 
 app.get('/api/info', (req, res) => {
     res.json({
-        message: 'Hello from jonotech on CI/CD Lab demo 1!',
+        message: 'Hello from jonotech on CI/CD Lab demo 2!',
         environment: process.env.NODE_ENV || 'development',
         version: process.env.APP_VERSION || '1.0.0'
     });
